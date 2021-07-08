@@ -10,6 +10,16 @@ class Child extends Component {
       ></div>
     )
   }
+
+  render() {
+    console.log(this.props)
+    return (
+      <div onClick={this.props.handleColorChange}
+        className="child"
+        style={{backgroundColor: "#FFF"}}
+      ></div>
+    )
+  }
 }
 
 export default Child
